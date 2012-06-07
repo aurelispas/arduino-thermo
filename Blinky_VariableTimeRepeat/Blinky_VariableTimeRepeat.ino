@@ -19,16 +19,15 @@ void setup()  {
 
 //Blinky function takes parameters "time" for both on and off and "repeat" 
 void onoff (int time, int repeat) {
-int count;
-int var = 0; 
-count = 0;
-while(var < repeat){
+	int count;
+	int var = 0; 
+	count = 0;
+   while(var < repeat){
+	digitalWrite(led, HIGH);   // turn the LED on
+	delay(time);               // wait for a second
 
-digitalWrite(led, HIGH);   // turn the LED on
-delay(time);               // wait for a second
-
-digitalWrite(led, LOW);    // turn the LED off
-delay(time);               // wait for a second
+	digitalWrite(led, LOW);    // turn the LED off
+	delay(time);               // wait for a second
 var++;
 }
 }
@@ -42,16 +41,16 @@ var++;
 
 void loop()
 {
-  int x = 1;
-  int repeat = 0; 
+  int x = -1;       //initialize loop interval var 
+  int repeat = 0;  //initialize repeat and time vars
   int time = 0; 
   
-  for (int i = 0; i > -1; i = i+x){
+  for (int i = 0; i > -1; i = i+x){ // loop creates exponentially faster blinks, repeated exponentially more times, until reversed
       repeat = pow(2,i);
       time = 1024/repeat; 
       onoff (time, repeat);
-      if (i == 10) x = -1;  // switch direction at 10 and 0
-      if (i == 0)  x = 1;    
+      if (i == 10 || i == 0) x =x*-1;  // switch direction at 10 and 0
+      ;    
    } 
 }
 
