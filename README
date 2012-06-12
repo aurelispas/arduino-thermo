@@ -1,0 +1,8 @@
+Local Development
+=================
+
+1\. Start a local web server:
+
+    python -m SimpleHTTPServer
+
+2\. Point your browser to <http://localhost:8000/>.
