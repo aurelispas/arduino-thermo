@@ -15,6 +15,6 @@
 #include <stdio.h>
 
 int main(int argc, char *argv[]) {
-   printf("Hello Josh!\n");
+   printf("Hello John Nishinaga! Why are xcode command line installs a pain in my arse?\n");
    return 0;
 }
