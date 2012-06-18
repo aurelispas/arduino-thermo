@@ -9,7 +9,7 @@
  *
  * Comple & run with:
  *
- *   gcc hello-josh.c -o hello-josh && ./hello-josh
+ *   gcc 01-hello-josh.c -o 01-hello-josh && ./01-hello-josh
  */ 
 
 #include <stdio.h>
