@@ -1,5 +1,5 @@
 /*
- * Your assignment -- create a star that moves back and forth on the screen.
+ * Assignment #2: Create a star that moves back and forth on the screen.
  *
  * See the example ruby program. Run with:
  *
@@ -12,8 +12,7 @@
  *     man 3 usleep
  *
  * - You may need to "flush" the output buffer (stdout) in order to see
- *   changes
- *   occurring in real time. See:
+ *   changes occurring in real time. See:
  *
  *     man 3 fflush
  *
@@ -22,7 +21,7 @@
  *
  * Comple & run with:
  *
- *   gcc 02-back-and-forth.c -o 02-back-and-forth && 02-back-and-forth
+ *   gcc 02-back-and-forth.c -o 02-back-and-forth && ./02-back-and-forth
  *
  */
 
